@@ -1,0 +1,152 @@
+/* CSS Selectors 
+    A CSS selector selects the HTML element(s) you want to style.
+*/
+
+/* CSS Selectors
+
+    CSS selectors are used to "find" (or select) the HTML elements you wnat to 
+    style.
+
+    We can devide CSS selectors inot five categories::after
+
+    . Simple selectors (select elements based on name, id, class)
+    . Combinator selectors (select elements based on a specific relationship
+    between them)
+    . Pseudo-class selectors (select elements based on a certain state)
+    . Pseudo-elements selectors (select and style a part of an element)
+    . Attribute selectors (select elements based on an attribute or attribute 
+    value)
+*/
+
+/* The CSS element selector
+
+    The element selector selects HTML elements based on the element name.
+
+    Here, all <p> elements on the page will be center-aligned, with a red text
+    color:
+*/
+/*
+p {
+    color: red;
+    text-align: center;
+}
+*/
+p {
+    text-align: center;
+}
+
+/* The CSS id selector
+
+    The id selector used the id attribute of an HTML element to select a specific
+    element.
+
+    The id of an element is unique within page, so the id selector is used to
+    select one unique element.
+
+    To select an element with a specific id, write a hash (#) character, followed 
+    by the id of the element
+
+    The CSS rule below will be applied to the HTML element with id="para1":
+*/
+
+#para1 {
+    text-align: center;
+    color: red;
+}
+
+/*Note: an id name cannot start with a number!*/
+
+/*The CSS class Selector
+
+    The class selector selects HTML elementts with a specific call attribute.
+
+    To select elements with a specific class, write a period (.) characted, followed
+    by the class name.
+
+    in this example all HTML elements with class="center" will be red and 
+    center-aligned:
+*/
+
+.center {
+    color: red;
+    text-align: center;
+}
+
+/*You can also specifiy the only specific HTML elements should be affected by
+    a class.
+
+    In this example only <p> elements with class="center" will be red and
+    center-
+*/
+
+p.center {
+    text-align: center;
+    color: red;
+}
+
+/*HTML elements can also refer to more than one class.
+
+    Example
+    in this example the <p> element will be styled according to class="center"
+    and to class="large":
+*/
+
+p.large {
+    font-size: 300%;
+}
+
+p.center {
+    text-align: center;
+    color: red;
+}
+
+/*The CSS Unversal Selector
+
+The CSS rule below will affect every HTML element on the page:
+The CSS rule below will affect every HTML element on the page:
+*/
+
+/*
+* {
+    text-align: center;
+    color: blue;
+}
+*/
+
+/*The CSS Grouping Selector
+
+    The Grouping selector selects all the HTML elements with the same style
+    definition.
+
+    Look at the following CSS code (the h1, h2, and p elements have the same
+    style definisions)
+
+    h1 {
+        text-align: center;
+        color: red;
+    }
+
+    h2 {
+        text-align: center;
+        color: red;
+    }
+
+    p { 
+        text-align: center;
+        color: red;
+    }
+
+*/
+
+/* It will be better to group the selectors, to minimize the code.
+
+    To group selectors, separate each selector with a comma.
+
+    Example 
+    In this example we have grouped the selectors from the code above:
+
+    h1, h2, p {
+        text-align: center;
+        color: red;
+    }
+*/
